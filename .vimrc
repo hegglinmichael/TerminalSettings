@@ -4,6 +4,9 @@
 "   1. highlight with mouse
 "   2. press "d"
 
+" inoremap ( ()
+" inoremap { {}
+
 " This folds code that is nested more than 3 times
 set foldmethod=indent
 set foldnestmax=3
