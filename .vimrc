@@ -4,8 +4,14 @@
 "   1. highlight with mouse
 "   2. press "d"
 
-" this highlights a double clicked word everywhere in the file
-nnoremap <silent> <2-LeftMouse> :let @/='\V\<'.escape(expand('<cword>'), '\').'\>'<cr>:set hls<cr>
+" This folds code that is nested more than 3 times
+set foldmethod=indent
+set foldnestmax=3
+" double click to fold and unfold
+noremap <2-LeftMouse> za
+
+" this highlights a right clicked word everywhere in the file
+nnoremap <silent> <RightMouse> :let @/='\V\<'.escape(expand('<cword>'), '\').'\>'<cr>:set hls<cr>
 
 " add line numbers
 set number
