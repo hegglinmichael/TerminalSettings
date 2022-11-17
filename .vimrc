@@ -50,7 +50,7 @@ set noerrorbells
 set belloff=all
 
 " enable mouse scrolling and resizing
-set mouse=a
+set mouse=i
 
 " set windows title to what is currently being edited
 set title
